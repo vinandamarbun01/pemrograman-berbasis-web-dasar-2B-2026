@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Saya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+    .hero-section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('vina.jpeg');
+        background-size: cover;
+        background-position: center;
+        filter: blur(3px);
+        z-index: -1;
+    }
+
+    .hero-section::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 0;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .singing-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .singing-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 3px solid #e5e7eb;
+    }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+
+    <nav class="bg-yellow-600 p-4 text-white flex justify-between">
+        <h1 class="font-bold" href="prktm1.html">MyPortfolio</h1>
+        <ul class="flex gap-4">
+            <li class="nav-item"><a class="nav-link" href="#prktm1.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Tentang">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2 class="text-3xl font-bold text-white">Halo, Saya Vinanda Kristiani Marbun</h2>
+            <p class="mt-4 text-gray-200">Selamat Datang Di Potofolio Saya</p>
+            <a href="#Tentang" class="inline-block mt-6 bg-green-600 text-white px-6 py-2 rounded hover:bg-yellow-500">
+                Lebih lanjut
+            </a>
+        </div>
+    </section>
+
+    <section id="Tentang" class="p-8" style="background-color: burlywood; color: black;">
+        <h2 class="text-2xl font-bold text-center mb-6">Tentang Saya</h2>
+        <img src="foto1.jpeg" alt="Foto Saya" class="profile-photo mx-auto mb-6">
+        <p class="text-center text-gray-600" style="color: black;">
+            Saya Vinanda Kristiani Marbun bisa di panggil vina,saya lahir di sumatera utara pada tanggal 10 mei 2007<br>
+            pendidikan sd saya di SDN 374 Natal, Di SMPN 3 Natal, Lalu melanjutkan pendidikan SMA di SMAS KESUMA INDAH dan melanjutkan perguruan tinggi<br>
+            di Universitas Trunojodyo Madura, Saya mengikiuti organisasi yaitu HIMASI, PUBLIC SPEAKING yang di mana dari kedua organisasi ini dapat melatih percaya diri<br>
+            dapat menambah relasi, dan pengetahuan. Di sela itu saya memiliki Skiils yaitu menjahit dan mendesain baju dan selanjutnya saya memiliki hobi dengan keseharian saya yaitu memasak.<br>
+    </section>
+
+    <section id="Skils" class="p-8">
+        <h2 class="text-2xl font-bold text-center mb-6">Skils</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" style="background-color: burlywood;">
+            <div class="bg-white p-4 rounded shadow singing-card" style="text-align: center;">
+                <h3 class="font-bold">MENJAHIT</h3>
+                    <img src="baju1.jpeg"alt="Web Development" style="margin-bottom: 10px;">
+                    <p class="text-gray-600" style="text-align: justify;">Saya suka menjahit ini dapat membuat imajinasi-imajinasi yang terbaru dan untuk mengisi waktu luang</p>
+            </div>
+        
+            <div class="bg-white p-4 rounded shadow singing-card" style="text-align: center;">
+                <h3 class="font-bold">MENJAHIT</h3>
+                    <img src="baju2.jpeg"alt="Web Development" style="margin-bottom: 10px;">
+                    <p class="text-gray-600" style="text-align: justify;">Saya suka menjahit yang di mana menjahit itu saling melengkapi dari sebuah desain baju</p>
+            </div>
+
+            <div class="bg-white p-4 rounded shadow singing-card" style="text-align: center;">
+                <h3 class="font-bold">DESAIN BUSANA</h3>
+                    <img src="skill.jpeg"alt="Web Development" style="margin-bottom: 10px;">
+                <p class="text-gray-600" style="text-align: justify;">Saya suka mendesain pola-pola baju serta membuat baju nya </p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="Organitions" class="p-8">
+        <h2 class="text-2xl font-bold text-center mb-6">Organitions</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" style="background-color: burlywood;">
+            <div class="bg-white p-4 rounded shadow singing-card" style="text-align: center;">
+                <h3 class="font-bold">HIMASI</h3>
+                    <img src="himasi.jpeg"alt="Web Development" style="margin-bottom: 10px;">
+                    <p class="text-gray-600" style="text-align: justify;">Saya ikut himasi untuk mengisi waktu luang saya</p>
+            </div>
+        
+            <div class="bg-white p-4 rounded shadow singing-card" style="text-align: center;">
+                <h3 class="font-bold">PUBLIC SPEAKING</h3>
+                    <img src="ps.jpeg"alt="Web Development" style="margin-bottom: 10px;">
+                    <p class="text-gray-600" style="text-align: justify;">Saya ikut organisasi public speaking untuk menambah relasi dan pengalaman serta pengetahuan dalam berkomunikasi dan melatih percaya diri</p>
+            </div>
+
+            <div class="bg-white p-4 rounded shadow singing-card" style="text-align: center;">
+                <h3 class="font-bold">HIMASI</h3>
+                    <img src="himasi.jpeg"alt="Web Development" style="margin-bottom: 10px;">
+                <p class="text-gray-600" style="text-align: justify;">Saya ikut himasi untuk menambah relasi dan bekerja sama dalam tim</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="Hobby" class="p-8">
+        <h2 class="text-2xl font-bold text-center mb-6">Hoby</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" style="background-color: burlywood;">
+            <div class="bg-white p-4 rounded shadow singing-card" style="text-align: center;">
+                <h3 class="font-bold">Pisang Renyah</h3>
+                    <img src="maknan.jpeg"alt="Web Development" style="margin-bottom: 10px;">
+                    <p class="text-gray-600" style="text-align: justify;">Saya sangat suka memasak yang dimana memasak itu suatu hal yang sangat menyenangkan</p>
+            </div>
+        
+            <div class="bg-white p-4 rounded shadow singing-card" style="text-align: center;">
+                <h3 class="font-bold">Risol Mayo</h3>
+                    <img src="risol.jpeg"alt="Web Development" style="margin-bottom: 10px;">
+                    <p class="text-gray-600" style="text-align: justify;">Saya sangat suka memasak yang dimana dengan memasak lebih menyukai masakan sendiri</p>
+            </div>
+
+            <div class="bg-white p-4 rounded shadow singing-card" style="text-align: center;">
+                <h3 class="font-bold">Pisang Kembung</h3>
+                    <img src="maknan.jpeg"alt="Web Development" style="margin-bottom: 10px;">
+                <p class="text-gray-600" style="text-align: justify;">Saya sangat suka memasak dan resep-resep terbaru dapat menumbuhkan ciri khas makanan itu sendiri dengan meluangkan memasak tanpa harus mager</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    
+    <section id="contact" class="p-8 bg-white text-center">
+        <h2 class="text-2xl font-bold mb-4">Follow Me</h2>
+            <a href="https://www.tiktok.com/@vinanda640hn" class="text-black me-2 hover:yellow-500">Tiktok</a><br>
+            <a class="text-black me-2">Phone: </a>081370388624<br>
+        </div>
+    </section>
+
+    
+    <footer class="bg-yellow-600 text-white text-center p-4">
+        © 2026 Vinanda Kristiani Marbun
+    </footer>
+
+</body>
+</html>
